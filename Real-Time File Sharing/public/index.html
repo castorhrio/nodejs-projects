@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>文件传输助手</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="screen join-screen active">
+        <div class="form">
+          <h2>文件传输助手</h2>
+          <div class="form-input">
+            <button id="sender-start-con-btn">创建共享空间</button>
+          </div>
+
+          <div class="form-input" id="join-id"></div>
+        </div>
+      </div>
+
+      <div class="screen fs-screen">
+        <div class="file-input">
+          <label for="file-input"> 选择你要分享的文件 </label>
+          <input type="file" id="file-input" />
+        </div>
+
+        <div class="files-list">
+          <div class="title">共享的文件</div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.socket.io/4.7.4/socket.io.min.js"
+      integrity="sha384-Gr6Lu2Ajx28mzwyVR8CFkULdCU7kMlZ9UthllibdOSo6qAiN+yXNHqtgdTvFXMT4"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="sender.js"></script>
+  </body>
+</html>
